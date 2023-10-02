@@ -1,7 +1,8 @@
+package String;
 import java.util.*;
 
 
-public class remove_other
+public class remove_space
 {
     public static void main(String[]args)
 {
@@ -9,12 +10,11 @@ public class remove_other
     System.out.print("Enter the string = " );
     String str = sc.nextLine();
     char ch[] = new char[str.length()];
-    int cs = 0;
+    int n = 0;
     for(int i=0;i<str.length();i++)
     {
-        char c = str.charAt(i);
-        if(Character.isAlphabetic(c))
-            ch[cs++] = c;
+        if(str.charAt(i)!=' ')
+        ch[n++] = str.charAt(i);
     }
     str = String.valueOf(ch);
     System.out.println(str);
