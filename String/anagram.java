@@ -11,7 +11,7 @@ public class anagram
     String str = sc.nextLine();
     System.out.print("Enter the string-2 = " );
     String str1 = sc.nextLine();
-    if(str.length()<=str1.length())
+    if(str.length()>str1.length())
     System.out.println("false");
     else
     {
